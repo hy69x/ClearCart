@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock E-Commerce Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #b12704;
+        }
+        .fake-discount {
+            color: #555;
+            text-decoration: line-through;
+            font-size: 0.9em;
+        }
+        .urgency {
+            color: #c00;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .social-proof {
+            color: #007600;
+            margin: 5px 0;
+        }
+        .hidden-fees {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 15px;
+        }
+        .btn {
+            background-color: #ffd814;
+            border: 1px solid #fcd200;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .opt-out {
+            font-size: 0.8em;
+            color: #0066c0;
+            text-decoration: underline;
+            cursor: pointer;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mock Store for DarkShield Testing</h1>
+    <p>This page contains simulated dark patterns. If the extension is loaded, it should highlight the manipulative text.</p>
+
+    <div class="product-card">
+        <div class="product-title">Ultra Wireless Earbuds PRO</div>
+        
+        <div>
+            <span class="price">₹1,999</span>
+            <span class="fake-discount">M.R.P: ₹8,999</span>
+            <span>(Save ₹7000) - 78% off!</span>
+        </div>
+        
+        <div class="urgency">
+            Hurry up! Only 2 left in stock!
+        </div>
+        
+        <div class="social-proof">
+            Bestseller in Electronics. Over 500 people bought in last 24 hours.
+        </div>
+        
+        <div class="urgency">
+            Offer expires in 05:32 minutes.
+        </div>
+        
+        <div class="btn">Add to Cart</div>
+        
+        <div class="hidden-fees">
+            * A small convenience fee applies at checkout.
+        </div>
+        
+        <div style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 10px;">
+            <p><strong>Want 10% Extra Discount? Subscribe to our newsletter!</strong></p>
+            <div class="btn" style="background-color: #007185; color: white;">Yes, I want to save!</div>
+            <div class="opt-out">No thanks, I don't want to save money</div>
+        </div>
+    </div>
+
+</body>
+</html>

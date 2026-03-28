@@ -43,4 +43,8 @@ const PATTERNS = [
 
 // In a real scenario, this would be exported for modularity if using ES modules
 // but for a simple injected script, global scope is often used or wrapped in an IIFE.
-window.DARK_PATTERNS = PATTERNS;
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = PATTERNS;
+} else {
+  window.DARK_PATTERNS = PATTERNS;
+}
