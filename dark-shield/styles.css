@@ -1,0 +1,56 @@
+.dark-shield-highlight-high {
+  outline: 3px solid red !important;
+  background-color: rgba(255, 0, 0, 0.1) !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.dark-shield-highlight-medium {
+  outline: 3px solid orange !important;
+  background-color: rgba(255, 165, 0, 0.1) !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.dark-shield-highlight-low {
+  outline: 3px solid yellow !important;
+  background-color: rgba(255, 255, 0, 0.1) !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.dark-shield-tooltip {
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: sans-serif;
+  white-space: nowrap;
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dark-shield-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+[class*="dark-shield-highlight-"]:hover .dark-shield-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
